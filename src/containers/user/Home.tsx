@@ -6,7 +6,7 @@ function Home() {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col justify-center  items-center pt-[86px] ">
-      <h1 className="text-[40px]   font-title sm:text-[30px]">
+      <h1 className="text-[40px]   font-title sm:text-[20px]">
         {" "}
         {t("home.page.your")}
       </h1>
@@ -28,7 +28,7 @@ function Home() {
         {Iimages.map((item, index) => {
           return (
             <div
-              className={`${item.image} bg-no-repeat flex bg-cover justify-center items-center rounded-lg w-[350px] h-[180px]`}
+              className={`${item.image} bg-no-repeat flex bg-cover justify-center items-center rounded-lg w-[350px] h-[180px] sm:h-[160px] sm:w-[290px]`}
               key={index}
             >
               {t(item.title)}
@@ -36,6 +36,8 @@ function Home() {
           );
         })}
       </div>
+
+      <div className="h-[50px]"></div>
     </div>
   );
 }
