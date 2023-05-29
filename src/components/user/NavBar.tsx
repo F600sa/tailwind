@@ -3,7 +3,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { appRoutesObj } from "src/app.paths";
 import i18n from "src/core/configs/i18n";
-import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
+import { AiOutlineCloseCircle } from "@react-icons/all-files/ai/AiOutlineCloseCircle";
 import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 
 function NavBar() {
@@ -44,7 +44,7 @@ function NavBar() {
         }`}
       >
         <div className="flex justify-end items-end w-full 2xl:hidden xl:hidden lg:hidden md:hidden ">
-          <AiOutlineClose
+          <AiOutlineCloseCircle
             onClick={() => setOpen(false)}
             className="text-[30px] text-whiteColor"
           />
