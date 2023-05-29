@@ -1,4 +1,3 @@
-import { MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "src/components/user/Button";
 import { Iimages } from "src/core/statics/home_statics";
@@ -7,7 +6,10 @@ function Home() {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col justify-center  items-center pt-[86px] ">
-      <h1 className="text-[40px] font-title "> {t("home.page.your")}</h1>
+      <h1 className="text-[40px]   font-title sm:text-[30px]">
+        {" "}
+        {t("home.page.your")}
+      </h1>
       <div className=" flex flex-row gap-[16px]">
         <Button
           text={t("home.page.advertisement")}
