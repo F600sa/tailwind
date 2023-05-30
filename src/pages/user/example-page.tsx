@@ -1,10 +1,9 @@
-import React from 'react';
-import ExampleContainer from '../../containers/user/example-container';
+import ExampleContainer from "../../containers/user/example-container";
 
-export default function ExamplePage(){
+export default function ExamplePage() {
   return (
     <div>
-     <ExampleContainer />
+      <ExampleContainer />
     </div>
-  )
+  );
 }

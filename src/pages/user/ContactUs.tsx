@@ -1,5 +1,11 @@
+import LayoutPage from "src/components/user/layoutpage";
+
 function ContactUs() {
-  return <div>ContactUs</div>;
+  return (
+    <LayoutPage>
+      <div>ContactUs</div>
+    </LayoutPage>
+  );
 }
 
 export default ContactUs;
